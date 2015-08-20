@@ -1,0 +1,18 @@
+<section class="tile col-lg-4 col-md-4 col-sm-12">
+	<figure class="figure-wrapper col-xs-12">
+		<div class="responsive-image-container">
+			<img class="responsive-image"
+				 src="{{::tile.content.imageUrl}}"
+				 alt="{{::tile.content.header}}-image"
+				 ng-click="vm.linkToSite(tile.content.url)">
+		</div>
+	</figure>
+	<section class="tile-body"
+		ng-class="(vm.layoutType === 'grid') ? 'col-sm-12' : 'col-xs-7'">
+		<header>
+			<h3>{{::tile.content.header}}</h3>
+		</header>
+		<p>{{::tile.content.body | limitTo: 99}}... <a ng-href="{{::tile.content.url}}">continue »</a></p>
+	</section>
+	
+</section>

@@ -1,0 +1,103 @@
+$desktop: 768px
+$mobile: 480px
+
+.row
+	width: 100%
+	clear: both
+
+[class*="col-"]
+	transition: width 350ms ease-in-out
+
+@media all and (min-width: $desktop)
+	@for $i from 1 through 12
+		@if ($i/12 * 100%) <= 100%
+			.col-sm-#{$i}
+				width: ($i/12) * 100%
+
+		@if ($i/12 * 100%) > 100%
+			.col-sm-#{$i}
+				width: 100%
+
+	@for $i from 1 through 12
+		@if ($i/12 * 100%) <= 100%
+			.col-md-#{$i}
+				width: ($i/12) * 100%
+
+		@if ($i/12 * 100%) > 100%
+			.col-md-#{$i}
+				width: 100%
+
+	@for $i from 1 through 12
+		@if ($i/12 * 100%) <= 100%
+			.col-lg-#{$i}
+				width: ($i/12) * 100%
+
+		@if ($i/12 * 100%) > 100%
+			.col-lg-#{$i}
+				width: 100%
+
+@media all and (min-width: $mobile + 1) and (max-width: $desktop - 1)
+	@for $i from 1 through 12
+		@if ($i/6 * 100%) <= 100%
+			.col-lg-#{$i}
+				width: ($i/6) * 100%
+
+		@if ($i/6 * 100%) > 100%
+			.col-lg-#{$i}
+				width: 100%
+
+	@for $i from 1 through 12
+		@if ($i/3 * 100%) <= 100%
+			.col-sm-#{$i}
+				width: ($i/12) * 100%
+
+		@if ($i/3 * 100%) > 100%
+			.col-sm-#{$i}
+				width: 100%
+
+	@for $i from 1 through 12
+		@if ($i/8 * 100%) <= 100%
+			.col-md-#{$i}
+				width: ($i/8) * 100%
+
+		@if ($i/8 * 100%) > 100%
+			.col-md-#{$i}
+				width: 100%
+				
+
+@media all and (max-width: $mobile)
+	@for $i from 1 through 12
+		@if ($i/4 * 100%) <= 100%
+			.col-lg-#{$i}
+				width: ($i/4) * 100%
+
+		@if ($i/4 * 100%) > 100%
+			.col-lg-#{$i}
+				width: 100%
+
+	@for $i from 1 through 12
+		@if ($i/6 * 100%) <= 100%
+			.col-md-#{$i}
+				width: ($i/6) * 100%
+
+		@if ($i/6 * 100%) > 100%
+			.col-md-#{$i}
+				width: 100%
+
+	@for $i from 1 through 12
+		@if ($i/9 * 100%) <= 100%
+			.col-sm-#{$i}
+				width: ($i/12) * 100%
+
+		@if ($i/9 * 100%) > 100%
+			.col-sm-#{$i}
+				width: 100%
+
+@for $i from 1 through 12
+	@if ($i/12 * 100%) <= 100%
+		.col-xs-#{$i}
+			width: ($i/12) * 100%
+
+	@if ($i/12 * 100%) > 100%
+		.col-xs-#{$i}
+			width: 100%
