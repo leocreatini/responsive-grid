@@ -2,7 +2,7 @@
 	'use strict';
 
 	angular
-		.module('app')
+		.module('responsiveGrid')
 		.config(config);
 
 	config.$inject = ['$routeProvider', '$locationProvider'];

@@ -23,8 +23,15 @@ figure {
 .row {
   width: 100%;
   clear: both; }
+  .row:before,
+  .row:after {
+    content: "";
+    display: table;
+    clear: both; }
 
 [class*="col-"] {
+  float: left;
+  min-height: 1px;
   -webkit-transition: width 350ms ease-in-out;
           transition: width 350ms ease-in-out; }
 
@@ -288,7 +295,7 @@ figure {
 
 body {
   width: 100%;
-  height: auto; }
+  margin: 0 0 2em 0; }
 
 .window-container {
   display: block;
@@ -301,8 +308,9 @@ body {
   padding: 1em; }
 
 body {
-  font-size: 18px;
-  font-family: "Helvetica Neue", Arial, sans-serif; }
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  -webkit-transition: font-size 350ms ease-in-out;
+          transition: font-size 350ms ease-in-out; }
 
 h3 {
   font-weight: 700;
@@ -310,7 +318,7 @@ h3 {
   color: #171717; }
 
 h1 {
-  font-size: 4em;
+  font-size: 3.75em;
   margin: 1em 0 0.5em; }
 
 h2 {
@@ -325,6 +333,28 @@ p {
   line-height: 1.5;
   color: #737373;
   margin: 0 0 0.5em; }
+
+a {
+  color: #C96C31; }
+  a:hover {
+    color: #BF7425; }
+  a:active,
+  a:focus {
+    color: #8D4E27; }
+  a:visited {
+    color: #5F301A; }
+
+@media all and (min-width: 768px) {
+  body {
+    font-size: 18px; } }
+
+@media all and (min-width: 481px) and (max-width: 767px) {
+  body {
+    font-size: 17px; } }
+
+@media all and (max-width: 480px) {
+  body {
+    font-size: 16px; } }
 
 .tile-controls {
   display: block;
@@ -361,9 +391,10 @@ p {
           transition: all 350ms ease-in-out;
   box-sizing: border-box;
   padding: .5em;
-  float: left; }
-  .tile figure,
-  .tile section {
+  float: left;
+  height: 450px; }
+  .tile .figure-wrapper,
+  .tile .tile-body {
     display: inline-block;
     float: left; }
   .tile .figure-wrapper {
@@ -381,11 +412,5 @@ p {
     width: 100%;
     height: 100%;
     cursor: pointer; }
-
-@media all and (min-width: 481px) {
-  .tile {
-    min-height: 450px; } }
-
-@media all and (max-width: 480px) {
-  .tile {
-    min-height: 450px; } }
+  .tile .cta {
+    float: right; }

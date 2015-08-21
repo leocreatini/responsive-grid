@@ -2,7 +2,7 @@
 	'use static';
 
 	angular
-		.module('app')
+		.module('responsiveGrid')
 		.factory('DataService', DataService);
 
 	DataService.$inject = ['$log'];
@@ -20,17 +20,17 @@
 			},
 			{
 				content: {
-					imageUrl: "http://i.guim.co.uk/img/media/31b6d041dfa00c9ea25bda503321f1a6c847908d/0_0_5396_3238/master/5396.jpg?w=620&q=85&auto=format&sharp=10&s=ff0a1345b0dce3dd3fce4338a56e4a44",
-					header: "Potential sources of helium revealed, as reserves of the precious gas dwindle",
-					body: "A few years ago, we were warned that the world’s helium reserves were running out. Today, researchers announced there may be several potential new sources of the precious gas hidden throughout the world.",
-					url: "http://www.theguardian.com/science/2015/aug/19/potential-sources-of-helium-revealed-as-reserves-of-the-precious-gas-dwindle"
+					imageUrl: "http://i.guim.co.uk/img/static/sys-images/Guardian/Pix/pictures/2015/8/20/1440084421494/658509dc-71ec-4329-a44a-65a8968f31eb-2060x1236.jpeg?w=620&q=85&auto=format&sharp=10&s=c67c01bbda168979e31e6cad2239a2cd",
+					header: "The sky pool: London prepares for a flood of bathing oligarchs",
+					body: "From an all-glass swimming bridge to ‘the highest residential pool in London’, developers are vying for the fanciest pools to flog their projects to overseas investors.",
+					url: "http://www.theguardian.com/artanddesign/architecture-design-blog/2015/aug/20/london-sky-pool-trend-swimming-oligarch"
 				}
 			},
 			{
 				content: {
 					imageUrl: "http://i.guim.co.uk/img/media/dc2d8bbab6e944b174677c44f279579f6a377a65/2_291_4366_2620/master/4366.jpg?w=620&q=85&auto=format&sharp=10&s=63ab13befd04056c4f80a80bca710620",
 					header: "Pesticides linked to bee decline for first time in a countrywide field study",
-					body: "Landscape-wide research by former UK government agency on oilseed rape fields in England and Wales shows link between neonicotinoids and honeybee colony losses",
+					body: "Landscape-wide research by former UK government agency on oilseed fields in England and Wales shows link between neonicotinoids and honeybee colony losses",
 					url: "http://www.theguardian.com/environment/2015/aug/20/pesticides-neonicotinoids-linked-bee-decline-first-time-large-scale-field-study"
 				}
 			},
@@ -45,7 +45,7 @@
 			{
 				content: {
 					imageUrl: "http://i.guim.co.uk/img/static/sys-images/Guardian/Pix/pictures/2015/8/18/1439916885096/aa1ecf89-1fd8-47b3-9644-58322e2b8be3-2060x1236.jpeg?w=620&q=85&auto=format&sharp=10&s=1b13513d522eb1f6eb84b905002f714d",
-					header: "Can the humble fruit fly help create a flourishing African scientific community?",
+					header: "Can the humble fruit fly help create a African scientific community?",
 					body: "A small institute in Kampala is cultivating a regional network of researchers, using an inexpensive lab model based on the fruit fly ",
 					url: "http://www.theguardian.com/global-development-professionals-network/2015/aug/20/fruit-fly-african-scientific-research-kampala"
 				}

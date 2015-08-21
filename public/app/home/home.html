@@ -1,8 +1,9 @@
 <section class="page-container">
 	<h1>{{::vm.page.header}}</h1>
 	<p>{{vm.page.description}}</p>
+	<p><em>{{vm.page.credit}}</em></p>
 	<hr>
-	<section class="tile-container">
+	<section class="tile-container row">
 		<tile ng-repeat="tile in vm.tiles"></tile>
 	</section>
 </section>

@@ -2,7 +2,7 @@
 	'use strict';
 
 	angular
-		.module('app')
+		.module('responsiveGrid')
 		.controller('HomeController', HomeController);
 
 	HomeController.$inject = ['$scope', '$log', '$location', 'DataService'];
@@ -12,8 +12,9 @@
 		var vm = this;
 		vm.layoutType = 'grid';
 		vm.page = {
-			header: "Responsive Grids",
-			description: "This is an example of custom responsive grids for basic articles. Content was sourced from TheGuardian.com"
+			header: "The Grid",
+			description: "A digital frontier. I tried to imagine what custom responsive grids looked like in the CSS engine. Were they like lanyards in a swimming pool, white-picket fences, or something else entirely?",
+			credit: "Content was sourced from TheGuardian.com."
 		}; //vm.page{}
 
 		vm.tiles = DataService.data;

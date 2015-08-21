@@ -1,10 +1,11 @@
 <section class="tile col-lg-4 col-md-4 col-sm-12">
 	<figure class="figure-wrapper col-xs-12">
 		<div class="responsive-image-container">
-			<img class="responsive-image"
+			<a ng-href="{{::tile.content.url}}" target="_blank">
+				<img class="responsive-image"
 				 src="{{::tile.content.imageUrl}}"
-				 alt="{{::tile.content.header}}-image"
-				 ng-click="vm.linkToSite(tile.content.url)">
+				 alt="{{::tile.content.header}}-image">
+			</a>
 		</div>
 	</figure>
 	<section class="tile-body"
@@ -12,7 +13,8 @@
 		<header>
 			<h3>{{::tile.content.header}}</h3>
 		</header>
-		<p>{{::tile.content.body | limitTo: 99}}... <a ng-href="{{::tile.content.url}}">continue »</a></p>
+		<p>{{::tile.content.body | limitTo: 90}}...</p>
+		<a class="cta" ng-href="{{::tile.content.url}}" target="_blank">Continue »</a>
 	</section>
 	
 </section>

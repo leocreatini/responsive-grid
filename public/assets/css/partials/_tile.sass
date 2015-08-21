@@ -3,9 +3,10 @@
 	box-sizing: border-box
 	padding: .5em
 	float: left
+	height: 450px
 
-	figure,
-	section
+	.figure-wrapper,
+	.tile-body
 		display: inline-block
 		float: left
 
@@ -28,10 +29,6 @@
 		height: 100%
 		cursor: pointer
 
-@media all and (min-width: $mobile + 1)
-	.tile
-		min-height: 450px
+	.cta
+		float: right
 
-@media all and (max-width: $mobile)
-	.tile
-		min-height: 450px

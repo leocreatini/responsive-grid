@@ -5,7 +5,15 @@ $mobile: 480px
 	width: 100%
 	clear: both
 
+	&:before,
+	&:after
+		content: ""
+		display: table
+		clear: both
+
 [class*="col-"]
+	float: left
+	min-height: 1px
 	transition: width 350ms ease-in-out
 
 @media all and (min-width: $desktop)
@@ -36,6 +44,7 @@ $mobile: 480px
 			.col-lg-#{$i}
 				width: 100%
 
+
 @media all and (min-width: $mobile + 1) and (max-width: $desktop - 1)
 	@for $i from 1 through 12
 		@if ($i/6 * 100%) <= 100%
@@ -63,7 +72,7 @@ $mobile: 480px
 		@if ($i/8 * 100%) > 100%
 			.col-md-#{$i}
 				width: 100%
-				
+
 
 @media all and (max-width: $mobile)
 	@for $i from 1 through 12
@@ -92,6 +101,7 @@ $mobile: 480px
 		@if ($i/9 * 100%) > 100%
 			.col-sm-#{$i}
 				width: 100%
+
 
 @for $i from 1 through 12
 	@if ($i/12 * 100%) <= 100%
