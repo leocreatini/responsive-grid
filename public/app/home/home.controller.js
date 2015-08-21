@@ -18,14 +18,6 @@
 		}; //vm.page{}
 
 		vm.tiles = DataService.data;
-		vm.linkToSite = linkToSite;
-
-		//Functions
-		function linkToSite(link) {
-			console.log(link); //REMOVE THIS WHEN DONE TESTING
-			$location.url(link);
-		}
-
 
 	} //HomeController()
 
